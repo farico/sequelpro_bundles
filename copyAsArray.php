@@ -11,8 +11,7 @@ if ($result) {
 		$result[$k] = array_combine($columns, $data);
 	}
 }
-?>
-<pre>
-<?php var_export($result); ?>
-</pre>
+
+$cmd = 'echo '.escapeshellarg(var_export($result, true)).' | __CF_USER_TEXT_ENCODING='.posix_getuid().':0x8000100:0x8000100 pbcopy';
+shell_exec($cmd);
 
