@@ -4,6 +4,8 @@ This is a bundle for Sequel pro to copy data as PHP array.
 
 ## Installing
 
+Make sure you have mcrypt extension installed. If you are using homebrew run `brew install php55-mcrypt`.
+
 Open Sequel Pro
 
 In menu select Bundles -> Bundle editor
